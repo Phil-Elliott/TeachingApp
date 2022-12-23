@@ -47,7 +47,7 @@ const Benefits = () => {
                 <h3 className="text-3xl font-bold mb-6 text-center text-Secondary">
                   {benefit.title}
                 </h3>
-                <p className="text-lg text-center text-Primary">
+                <p className="text-lg text-center text-Primary leading-loose">
                   {benefit.description}
                 </p>
               </div>

@@ -19,15 +19,16 @@ const Header = () => {
         />
       </div>
       <div>
+        <Button border={"border-white"} color={"text-LightBg"}>
+          Sign In
+        </Button>
         <Button
           bg={"bg-LightBg"}
           color={"text-Primary"}
           border={"border-LightBg"}
+          ml={"ml-8"}
         >
-          <div className="flex items-center">
-            <p className="mr-2">Go to app</p>
-            <HiOutlineArrowNarrowRight />
-          </div>
+          Sign Up
         </Button>
       </div>
     </div>

@@ -1,6 +1,12 @@
 import React from "react";
-import { Header, Main, Benefits } from "../components/Home";
-import About from "../components/Home/About/About";
+import {
+  Header,
+  Main,
+  Benefits,
+  About,
+  Classes,
+  Contact,
+} from "../components/Home";
 
 const Home = () => {
   return (
@@ -9,6 +15,8 @@ const Home = () => {
       <Main />
       <Benefits />
       <About />
+      <Classes />
+      <Contact />
     </div>
   );
 };
@@ -53,5 +61,15 @@ export default Home;
                 - Message
             - Could also just give email and weChat info
           - Footer
+
+
+
+
+          could do a class structure
+          - 1 on 1 (25mins)
+          - open to all ages
+          - 1 free trial class
+          - Open to specialized classes
+                - contact me with any questions or requests
 
 */

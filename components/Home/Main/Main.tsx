@@ -1,22 +1,23 @@
 import Image from "next/image";
 import React from "react";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import learning from "../../../assets/desk1.svg";
+import { AiFillMessage, AiOutlineSchedule } from "react-icons/ai";
+import learning from "../../../assets/learning.svg";
 import Button from "../Shared/Button/Button";
 import styles from "./Main.module.css";
 
 const Main = () => {
   return (
     <>
-      <div className="relative container mx-auto mt-20  grid grid-cols-2 gap-40">
-        <div>
-          <h2 className="text-5xl leading-relaxed font-bold text-LightBg mt-32">
+      <div className="relative container mx-auto my-32  grid grid-cols-2 gap-40">
+        <div className="">
+          <h2 className="text-5xl leading-relaxed font-bold text-LightBg">
             Helping kids learn and love English
           </h2>
           <p className="my-12 text-xl leading-loose text-LightBg">
-            My flexible scheduling and engaging lesson plans make it easy for
-            your child to learn and grow at their own pace, while also having
-            fun.
+            With the ability to schedule sessions at a time that works for your
+            family and interactive lesson content that keeps your child engaged
+            and motivated, your child will have the support they need to succeed
+            in their learning journey.
           </p>
           <Button
             bg={"bg-LightBg"}
@@ -24,21 +25,24 @@ const Main = () => {
             border={"border-LightBg"}
           >
             <div className="flex items-center">
-              <p className="mr-2">Go to app</p>
-              <HiOutlineArrowNarrowRight />
+              <p className="mr-2">Check Schedule</p>
+              <AiOutlineSchedule />
             </div>
           </Button>
           <Button
             ml={"ml-8"}
             bg={"bg-Primary"}
             color={"text-LightBg"}
-            border={"border-LightBg"}
+            border={"border-white"}
           >
-            Contact Me
+            <div className="flex items-center">
+              <p className="mr-2">Contact Me</p>
+              <AiFillMessage />
+            </div>
           </Button>
         </div>
         <div>
-          <Image src={learning} alt="learning" width={700} height={500} />
+          <Image src={learning} alt="learning" width={700} height={700} />
         </div>
       </div>
       <div className={styles["custom-shape-divider-bottom-1671689957"]}>
