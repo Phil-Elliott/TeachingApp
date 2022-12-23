@@ -33,12 +33,12 @@ const Benefits = () => {
 
   return (
     <div className=" bg-LightBg py-32">
-      <div className="container mx-auto flex justify-between">
+      <div className="container mx-auto grid grid-cols-4 gap-8">
         {benefitsData.map((benefit, i) => {
           return (
             <div
               key={benefit.title}
-              className="flex items-center flex-col py-8 px-8 mx-6 bg-white rounded-lg shadow-lg"
+              className="flex items-center flex-col py-8 px-8  bg-white rounded-lg shadow-lg"
             >
               <div className="flex items-center justify-center w-12 h-12 bg-Primary rounded-full mb-6">
                 <benefit.icon className="text-3xl text-LightBg" />
