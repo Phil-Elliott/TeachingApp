@@ -21,8 +21,8 @@ const About = () => {
 
   return (
     <>
-      <div className="bg-LightBg">
-        <div className="container mx-auto grid grid-cols-2 gap-40 pb-32 ">
+      <div className="bg-Tertiary">
+        <div className="container mx-auto grid lg:grid-cols-2 gap-40 pb-32 ">
           <div>
             <Image src={learning} alt="learning" width={700} height={500} />
           </div>
@@ -42,7 +42,7 @@ const About = () => {
             <div className="flex justify-between">
               {classData.map((data, index) => (
                 <div key={index} className="flex  flex-col gap-4">
-                  <h2 className="text-5xl font-bold text-Secondary">
+                  <h2 className="text-5xl font-bold text-Primary">
                     {data.number}
                   </h2>
                   <h2 className="text-1xl font-bold text-Primary">

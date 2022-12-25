@@ -31,25 +31,28 @@ const Classes = () => {
 
   return (
     <>
-      <div className="container mx-auto text-LightBg py-20">
+      <div className="container mx-auto py-20">
         <h2 className="text-5xl leading-relaxed font-bold text-LightBg w-7/12 text-center mx-auto mb-12">
           Providing Flexibility and Convenience with Online Classes
         </h2>
-        <div className="grid grid-cols-3 gap-12">
+        <div className="grid xl:grid-cols-3 gap-12">
           {classesData.map((classData, i) => {
             return (
               <div
                 key={classData.title}
-                className="bg-white rounded-lg shadow-lg"
+                className="bg-LightBg rounded-lg shadow-xl"
               >
-                <h3 className="text-4xl bg-LightBg p-6 font-bold mb-6 text-center text-Primary border border-Secondary rounded-lg">
+                <h3 className="text-4xl bg-Secondary p-6 font-bold mb-6 text-center text-LightBg border border-Secondary rounded-lg">
                   {classData.title}
                 </h3>
                 <ul className="text-lg text-Primary leading-loose py-2 px-10">
                   {classData.description.map((description, i) => {
                     return (
-                      <li key={description} className="mb-4 text-2xl">
-                        <div className="flex gap-3">
+                      <li
+                        key={description}
+                        className="mb-4 text-2xl leading-loose"
+                      >
+                        <div className="flex gap-3 font-medium">
                           <span className="text-Secondary">&#x2022;</span>
                           <p>{description}</p>
                         </div>

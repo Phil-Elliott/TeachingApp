@@ -13,12 +13,13 @@ module.exports = {
     },
     extend: {
       colors: {
-        Primary: "#0f4189",
-        Secondary: "#ff793f",
-        Tertiary: "#666a7b",
-        LightBg: "#f2f8ff",
+        Primary: "#6f42c1",
+        Secondary: "#add8e6",
+        Tertiary: "#f8f9fa",
       },
     },
   },
   plugins: [],
 };
+
+// https://colorkit.co/palette/ffadad-ffd6a5-fdffb6-caffbf-9bf6ff-a0c4ff-bdb2ff-ffc6ff/

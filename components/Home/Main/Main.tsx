@@ -8,21 +8,21 @@ import styles from "./Main.module.css";
 const Main = () => {
   return (
     <>
-      <div className="relative container mx-auto my-32  grid grid-cols-2 gap-40">
+      <div className="relative container mx-auto my-32  xl:grid grid-cols-2 gap-40">
         <div className="">
-          <h2 className="text-5xl leading-relaxed font-bold text-LightBg">
+          <h2 className="text-5xl leading-relaxed font-bold text-Tertiary">
             Helping kids learn and love English
           </h2>
-          <p className="my-12 text-xl leading-loose text-LightBg">
+          <p className="my-12 text-xl leading-loose text-Tertiary">
             With the ability to schedule sessions at a time that works for your
             family and interactive lesson content that keeps your child engaged
             and motivated, your child will have the support they need to succeed
             in their learning journey.
           </p>
           <Button
-            bg={"bg-LightBg"}
+            bg={"bg-Tertiary"}
             color={"text-Primary"}
-            border={"border-LightBg"}
+            border={"border-Tertiary"}
           >
             <div className="flex items-center">
               <p className="mr-2">Check Schedule</p>
@@ -32,8 +32,8 @@ const Main = () => {
           <Button
             ml={"ml-8"}
             bg={"bg-Primary"}
-            color={"text-LightBg"}
-            border={"border-white"}
+            color={"text-Tertiary"}
+            border={"border-Tertiary"}
           >
             <div className="flex items-center">
               <p className="mr-2">Contact Me</p>

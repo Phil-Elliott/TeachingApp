@@ -32,8 +32,8 @@ const Benefits = () => {
   ];
 
   return (
-    <div className=" bg-LightBg py-32">
-      <div className="container mx-auto grid grid-cols-4 gap-8">
+    <div className=" bg-Tertiary py-32">
+      <div className="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {benefitsData.map((benefit, i) => {
           return (
             <div
@@ -41,10 +41,10 @@ const Benefits = () => {
               className="flex items-center flex-col py-8 px-8  bg-white rounded-lg shadow-lg"
             >
               <div className="flex items-center justify-center w-12 h-12 bg-Primary rounded-full mb-6">
-                <benefit.icon className="text-3xl text-LightBg" />
+                <benefit.icon className="text-3xl text-Tertiary" />
               </div>
               <div>
-                <h3 className="text-3xl font-bold mb-6 text-center text-Secondary">
+                <h3 className="text-3xl font-bold mb-6 text-center text-Primary">
                   {benefit.title}
                 </h3>
                 <p className="text-lg text-center text-Primary leading-loose">

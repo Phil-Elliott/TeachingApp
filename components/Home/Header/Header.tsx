@@ -19,13 +19,13 @@ const Header = () => {
         />
       </div>
       <div>
-        <Button border={"border-white"} color={"text-LightBg"}>
+        <Button border={"border-Tertiary"} color={"text-Tertiary"}>
           Sign In
         </Button>
         <Button
-          bg={"bg-LightBg"}
+          bg={"bg-Tertiary"}
           color={"text-Primary"}
-          border={"border-LightBg"}
+          border={"border-Tertiary"}
           ml={"ml-8"}
         >
           Sign Up
